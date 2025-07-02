@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/main_portfolio_react/static/css/main.5cc7cb25.css",
+    "main.js": "/main_portfolio_react/static/js/main.5f67f92e.js",
+    "static/media/port.png": "/main_portfolio_react/static/media/port.dfbe79aa6a1c78978ad3.png",
+    "static/media/game.png": "/main_portfolio_react/static/media/game.6d837142186e44a039ea.png",
+    "static/media/scloud.png": "/main_portfolio_react/static/media/scloud.25da710b443fdc4f9c0f.png",
+    "static/media/react.png": "/main_portfolio_react/static/media/react.ccbd9d34a638b8556e62.png",
+    "static/media/html.png": "/main_portfolio_react/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/css.png": "/main_portfolio_react/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/github.png": "/main_portfolio_react/static/media/github.475edc83561a85fd25f7.png",
+    "static/media/javascript.png": "/main_portfolio_react/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "index.html": "/main_portfolio_react/index.html",
+    "main.5cc7cb25.css.map": "/main_portfolio_react/static/css/main.5cc7cb25.css.map",
+    "main.5f67f92e.js.map": "/main_portfolio_react/static/js/main.5f67f92e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5cc7cb25.css",
+    "static/js/main.5f67f92e.js"
+  ]
+}
