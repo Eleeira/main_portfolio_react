@@ -16,11 +16,14 @@ const Home = () => {
 
           </p>
           <div>
+            
+            
             <button className='text-gray-100 group px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-gray-600 to-gray-900 hover:from-cyan-500 hover:to-blue-800'>View Work
               <span className='group-hover:rotate-90 duration-300' >
                 <HiArrowNarrowRight className='ml-3' />
               </span>
             </button>
+            
           </div>
 
         </div>

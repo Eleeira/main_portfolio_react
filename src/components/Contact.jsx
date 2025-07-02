@@ -7,14 +7,13 @@ const Contact = () => {
 
                 <div className='pb-8'>
                     <p className='text-4xl font-bold inline border-b-4 border-cyan-400 text-gray-100'>Contact</p>
-                    <p className='text-gray-400 py-4'>Submit the form below or shoot me an email - adina.catucci@protonmail.com</p>
+                    <p className='text-gray-400 py-4'>Submit the form below or shoot me an email - adacatucci@proton.me</p>
                 </div>
 <input className='bg-gray-100 my-4 p-2 rounded-md' type="text" placeholder='Name' name='name' />
 <input className='my-4 p-2 bg-gray-100 rounded-md' type="email" placeholder='Email' name='email' />
 <textarea className='bg-gray-100 my-4 p-2 rounded-md' name="message" rows="10" placeholder='Message'></textarea>
 <button className='text-white rounded-md bg-gradient-to-r from-gray-600 to-gray-900 hover:from-cyan-500 hover:to-blue-800 px-4 py-3 my-8 mx-auto flex - items-center'>Let's Collaborate</button>
             </form>
-
 
 
 
