@@ -362,36 +362,12 @@ li {
   margin-bottom: 2rem;
 }
 
-.-ml-14 {
-  margin-left: -3.5rem;
-}
-
 .ml-3 {
   margin-left: .75rem;
 }
 
 .ml-4 {
   margin-left: 1rem;
-}
-
-.mt-1 {
-  margin-top: .25rem;
-}
-
-.-ml-10 {
-  margin-left: -2.5rem;
-}
-
-.-ml-6 {
-  margin-left: -1.5rem;
-}
-
-.-ml-8 {
-  margin-left: -2rem;
-}
-
-.-ml-12 {
-  margin-left: -3rem;
 }
 
 .ml-\[-100px\] {
@@ -450,28 +426,12 @@ li {
   width: 5rem;
 }
 
-.w-\[60px\] {
-  width: 60px;
+.w-\[160px\] {
+  width: 160px;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-\[72px\] {
-  width: 72px;
-}
-
-.w-\[80px\] {
-  width: 80px;
-}
-
-.w-\[56px\] {
-  width: 56px;
-}
-
-.w-\[160px\] {
-  width: 160px;
 }
 
 .max-w-7xl {
@@ -532,10 +492,6 @@ li {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-3 {
-  gap: .75rem;
 }
 
 .overflow-hidden {
@@ -706,10 +662,6 @@ li {
   padding-left: 1rem;
 }
 
-.pr-6 {
-  padding-right: 1.5rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -730,11 +682,6 @@ li {
 
 .text-xl {
   font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -892,24 +839,8 @@ li {
   background-image: linear-gradient(to right, #709dffcc, #5752e5cc) !important;
 }
 
-.hover\:ml-0:hover {
-  margin-left: 0;
-}
-
 .hover\:ml-\[-10px\]:hover {
   margin-left: -10px;
-}
-
-.hover\:w-\[180px\]:hover {
-  width: 180px;
-}
-
-.hover\:w-\[200px\]:hover {
-  width: 200px;
-}
-
-.hover\:w-\[220px\]:hover {
-  width: 220px;
 }
 
 .hover\:scale-110:hover {
@@ -938,14 +869,6 @@ li {
   outline: 2px solid #0000;
 }
 
-.group:hover .group-hover\:inline-block {
-  display: inline-block;
-}
-
-.group:hover .group-hover\:inline {
-  display: inline;
-}
-
 .group:hover .group-hover\:rotate-90 {
   --tw-rotate: 90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -955,10 +878,6 @@ li {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group:hover .group-hover\:justify-between {
-  justify-content: space-between;
 }
 
 .group:hover .group-hover\:bg-black\/50 {
