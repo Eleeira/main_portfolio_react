@@ -6,16 +6,24 @@
   "dependencies": {
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "react-icons": "^4.6.0",
+    "react-icons": "^4.12.0",
     "react-scripts": "^0.0.0",
     "react-scroll": "^1.8.8"
   },
+
+
   "scripts": {
     "start": "react-scripts start",
+<<<<<<< HEAD
     "build": "react-scripts build",
     "postbuild": "cp build/index.html build/404.html",
+=======
+>>>>>>> eebab52 (README + update, vulnerabilities)
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "parcel index.html --port 3000",
+    "build": "parcel build index.html --public-url ./",
+    "preview": "parcel serve index.html --port 5000"
   },
   "eslintConfig": {
     "extends": [
@@ -36,10 +44,13 @@
     ]
   },
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.15.4",
+    "@parcel/transformer-webmanifest": "^2.15.4",
     "@testing-library/jest-dom": "^6.7.0",
     "@testing-library/react": "^14.3.1",
     "@testing-library/user-event": "^14.6.1",
     "autoprefixer": "^10.4.12",
+    "parcel": "^2.15.4",
     "postcss": "^8.4.18",
     "tailwindcss": "^3.2.1",
     "web-vitals": "^5.1.0"

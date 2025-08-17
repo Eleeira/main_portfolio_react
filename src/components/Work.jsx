@@ -1,78 +1,55 @@
-import React from 'react'
-import Scloud from '../assets/scloud.png'
-import Game from '../assets/game.png'
-import Port from '../assets/port.png'
+// src/components/Work.jsx
 
-const Work = () => {
-    return (
-        <div name='work' className='w-full md:h-screen text-gray-300 bg-gradient-to-t from-gray-800 to-black'>
-            <div className='max-w-auto mx-auto p-16 flex flex-col justify-center w-full h-full sm:text-center'>
-                <div className='pb-8'>
-                    <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-cyan-400'>Work</p>
-                    <p className='py-6'>Some of my recent work</p>
+const IMG = {
+  scloud: new URL("../assets/scloud.png", import.meta.url).href,
+  game:   new URL("../assets/game.png",   import.meta.url).href,
+  port:   new URL("../assets/port.png",   import.meta.url).href,
+};
 
-                
-                    <p className='py-6'>2022</p>
+const ITEMS = [
+  { id: 1, src: IMG.scloud, title: "Canva Sites #1", alt: "Screenshot project Canva Sites 1", href: "#" },
+  { id: 2, src: IMG.game,   title: "Canva Sites #2", alt: "Screenshot project Canva Sites 2", href: "#" },
+  { id: 3, src: IMG.port,   title: "Canva Sites #3", alt: "Screenshot project Canva Sites 3", href: "#" },
+];
 
+export default function Work() {
+  return (
+    <section id="work" className="w-full text-gray-300 bg-gradient-to-t from-gray-800 to-black">
+      <div className="mx-auto w-full max-w-7xl px-6 py-16 md:py-24">
+        <header className="pb-8 text-center">
+          <h2 className="inline border-b-4 border-cyan-400 text-4xl font-bold">Work</h2>
+          <p className="py-6 text-gray-300">Some of my recent work</p>
+          <p className="py-2 text-sm/6 text-gray-400">2022</p>
+        </header>
+
+        {/* Grid semplice e responsive */}
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {ITEMS.map(({ id, src, title, alt, href }) => (
+            <article key={id} className="group relative overflow-hidden rounded-lg shadow-lg shadow-[#040c16]">
+              <a href={href} aria-label={title} className="block focus:outline-none">
+                {/* altezze fisse responsive (niente classi dinamiche) */}
+                <div className="relative">
+                  <img
+                    src={src}
+                    alt={alt || title}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-56 w-full object-cover transition-transform duration-300 group-hover:scale-105 md:h-64 lg:h-72"
+                    width={1200}
+                    height={800}
+                    sizes="(min-width:1024px) 33vw,(min-width:640px) 50vw,100vw"
+                  />
+                  <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition-all duration-300 group-hover:bg-black/50 group-hover:opacity-100">
+                    <span className="rounded-md px-3 py-1 text-center text-xl font-semibold tracking-wide text-white">
+                      {title}
+                    </span>
+                  </div>
                 </div>
-
-
-                {/**container */}
-                <div className='grid sm:grid-cols2 md:grid-cols-2 gap-4 lg:grid-cols-3'>
-
-
-                    {/**grid item */}
-      
-                        <div style={{ backgroundImage: `url(${Scloud})` }} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
-
-
-                        {/*hover effects */}
-                        <div className='opacity-0 group-hover:opacity-100'>
-                            <span className='text-2xl font-bold text-white tracking-wider'>
-                                Canva Sites #1
-                        </span>
-
-                        </div>
-                    </div>
-
-
-                    <div style={{ backgroundImage: `url(${Game})` }} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
-
-
-                        {/*hover effects */}
-                        <div className='opacity-0 group-hover:opacity-100'>
-                            <span className='text-2xl font-bold text-white tracking-wider'>
-                                Canva Sites #2
-
-                            </span>
-
-                        </div>
-                    </div>
-
-
-
-                    {/**grid item */}
-                    <div style={{ backgroundImage: `url(${Port})` }} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
-
-
-                        {/*hover effects */}
-                        <div className='opacity-0 group-hover:opacity-100'>
-                            <span className='text-2xl font-bold text-white tracking-wider'>
-                                Canva Sites #3
-
-                            </span>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-
-            </div>
+              </a>
+            </article>
+          ))}
         </div>
-    )
+      </div>
+    </section>
+  );
 }
-
-export default Work
