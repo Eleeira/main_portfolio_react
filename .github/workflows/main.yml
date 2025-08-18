@@ -1,8 +1,7 @@
 name: Deploy CRA to GitHub Pages
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 permissions:
   contents: read
@@ -22,7 +21,19 @@ jobs:
         with:
           node-version: 18
           cache: npm
-      - run: npm ci
+      - name: Install deps
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm i
+          fi
+      - name: Debug scripts (opzionale)
+        run: |
+          node -v
+          npm -v
+          jq '.scripts' package.json
+          npx --no-install react-scripts --version || echo "react-scripts MISSING"
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
