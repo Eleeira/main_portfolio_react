@@ -1,0 +1,58 @@
+{
+  "homepage": "https://eleeira.github.io/main_portfolio_react/",
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-icons": "^4.12.0",
+    "react-scripts": "^0.0.0",
+    "react-scroll": "^1.8.8"
+  },
+
+
+  "scripts": {
+    "start": "react-scripts start",
+<<<<<<< HEAD
+    "build": "react-scripts build",
+    "postbuild": "cp build/index.html build/404.html",
+=======
+>>>>>>> eebab52 (README + update, vulnerabilities)
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "parcel index.html --port 3000",
+    "build": "parcel build index.html --public-url ./",
+    "preview": "parcel serve index.html --port 5000"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.15.4",
+    "@parcel/transformer-webmanifest": "^2.15.4",
+    "@testing-library/jest-dom": "^6.7.0",
+    "@testing-library/react": "^14.3.1",
+    "@testing-library/user-event": "^14.6.1",
+    "autoprefixer": "^10.4.12",
+    "parcel": "^2.15.4",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.1",
+    "web-vitals": "^5.1.0"
+  }
+}
