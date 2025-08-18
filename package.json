@@ -2,12 +2,12 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Eleeira.github.io/main_portfolio_react/",
+  "homepage": "https://eleeira.github.io/main_portfolio_react/",
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-icons": "^5.2.1",
-    "react-scripts": "^0.0.0",
+    "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9"
   },
   "devDependencies": {
